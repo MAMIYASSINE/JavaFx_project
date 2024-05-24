@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="860.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AirlineFormController">
+	<children>
+		<AnchorPane prefHeight="703.0" prefWidth="1100.0">
+			<children>
+				<BorderPane layoutX="220.0" layoutY="173.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<top>
+						<AnchorPane prefHeight="42.0" prefWidth="1100.0" styleClass="white-bg" stylesheets="@../design/MainFormDesign.css" BorderPane.alignment="CENTER">
+							<children>
+								<AnchorPane layoutX="-19.0" layoutY="-86.0" prefHeight="143.0" prefWidth="260.0" styleClass="bg-color-1" stylesheets="@../design/MainFormDesign.css">
+									<children>
+										<Label layoutX="33.0" layoutY="98.0" styleClass="bg-color-1" stylesheets="@../design/MainFormDesign.css" text="Hotel Management System" textFill="WHITE">
+											<font>
+												<Font name="System Bold" size="16.0" />
+											</font>
+										</Label>
+									</children>
+								</AnchorPane>
+								<Label layoutX="487.0" layoutY="16.0" text="Airline Form">
+									<font>
+										<Font size="17.0" />
+									</font>
+								</Label>
+								<Label layoutX="860.0" layoutY="20.0" text="MM:DD:YYYY" />
+								<Button fx:id="Logout_btn" layoutX="1010.0" layoutY="16.0" mnemonicParsing="false" onAction="#directToLogin" styleClass="radius" stylesheets="@../design/PageDesign.css" text="Logout" />
+							</children>
+						</AnchorPane>
+					</top>
+					<left>
+						<AnchorPane prefHeight="543.0" prefWidth="242.0" styleClass="bg-color-1" stylesheets="@../design/MainFormDesign.css" BorderPane.alignment="CENTER">
+							<children>
+								<ImageView fitHeight="114.0" fitWidth="198.0" layoutX="29.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../image/hotelbooking.png" />
+									</image>
+								</ImageView>
+								<Label layoutX="25.0" layoutY="140.0" text="Admin ID :" textFill="WHITE">
+									<font>
+										<Font name="System Bold" size="12.0" />
+									</font>
+								</Label>
+								<Label layoutX="78.0" layoutY="140.0" prefHeight="17.0" prefWidth="20.0" text="  1" textFill="WHITE" />
+								<Label layoutX="25.0" layoutY="171.0" prefHeight="17.0" prefWidth="46.0" text="Email :" textFill="WHITE">
+									<font>
+										<Font name="System Bold" size="12.0" />
+									</font>
+								</Label>
+								<Label layoutX="78.0" layoutY="171.0" prefHeight="17.0" prefWidth="112.0" text="yassine@gmail.com" textFill="WHITE" />
+								<Line endX="120.0" layoutX="108.0" layoutY="208.0" startX="-82.0" stroke="WHITE" />
+								<Label layoutX="25.0" layoutY="228.0" prefHeight="28.0" prefWidth="56.0" text="Feature" textFill="WHITE">
+									<font>
+										<Font name="System Bold" size="14.0" />
+									</font>
+								</Label>
+								<Button fx:id="Dashboard_btn" layoutX="27.0" layoutY="256.0" mnemonicParsing="false" onAction="#directToAdminMainForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Dashboard">
+									<styleClass>
+										<String fx:value="btn-1" />
+										<String fx:value="radius" />
+									</styleClass>
+								</Button>
+								<Button fx:id="Hotel_btn" layoutX="27.0" layoutY="303.0" mnemonicParsing="false" onAction="#directToHotelForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Hotel">
+									<styleClass>
+										<String fx:value="btn-1" />
+										<String fx:value="radius" />
+									</styleClass>
+								</Button>
+								<Button fx:id="Airline_btn" layoutX="27.0" layoutY="352.0" mnemonicParsing="false" onAction="#directToAirlineForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Airline">
+									<styleClass>
+										<String fx:value="btn-1" />
+										<String fx:value="radius" />
+									</styleClass>
+								</Button>
+								<Button fx:id="Reservation_btn" layoutX="27.0" layoutY="399.0" mnemonicParsing="false" onAction="#directToReservationForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Reservation">
+									<styleClass>
+										<String fx:value="btn-1" />
+										<String fx:value="radius" />
+									</styleClass>
+								</Button>
+								<Button fx:id="Client_btn" layoutX="27.0" layoutY="445.0" mnemonicParsing="false" onAction="#directToClientForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Client">
+									<styleClass>
+										<String fx:value="btn-1" />
+										<String fx:value="radius" />
+									</styleClass>
+								</Button>
+								<Button fx:id="Voyage_btn" layoutX="27.0" layoutY="495.0" mnemonicParsing="false" onAction="#directToVoyageForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Voyage">
+									<styleClass>
+										<String fx:value="btn-1" />
+										<String fx:value="radius" />
+									</styleClass>
+								</Button>
+							</children>
+						</AnchorPane>
+					</left>
+					<center>
+						<AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+							<children>
+								<AnchorPane layoutX="108.0" layoutY="82.0" prefHeight="543.0" prefWidth="858.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<children>
+										<AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="221.0" prefWidth="832.0" stylesheets="@../design/MainFormDesign.css" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="13.599999999999909" AnchorPane.topAnchor="14.0">
+											<styleClass>
+												<String fx:value="shadow" />
+												<String fx:value="white-bg" />
+											</styleClass>
+											<children>
+												<AnchorPane layoutY="-1.0" prefHeight="267.0" prefWidth="566.0">
+													<children>
+														<Label layoutX="21.0" layoutY="95.0" text="Name :">
+															<font>
+																<Font name="System Bold" size="22.0" />
+															</font>
+														</Label>
+														<Label layoutX="14.0" layoutY="168.0" text="Convention Number :">
+															<font>
+																<Font name="System Bold" size="22.0" />
+															</font>
+														</Label>
+														<TextField fx:id="nameField" layoutX="290.0" layoutY="87.0" prefHeight="48.0" prefWidth="244.0" styleClass="shadow" stylesheets="@application.css" />
+														<TextField fx:id="conventionNumberField" layoutX="290.0" layoutY="160.0" prefHeight="48.0" prefWidth="239.0" styleClass="shadow" stylesheets="@application.css" />
+														<Label layoutX="21.0" layoutY="22.0" text="Airline Id :">
+															<font>
+																<Font name="System Bold" size="22.0" />
+															</font>
+														</Label>
+														<TextField fx:id="airlineIdField" layoutX="290.0" layoutY="14.0" prefHeight="48.0" prefWidth="196.0" styleClass="shadow" stylesheets="@application.css" />
+													</children>
+												</AnchorPane>
+												<Button layoutX="588.0" layoutY="8.0" mnemonicParsing="false" onAction="#createAirline" prefHeight="38.0" prefWidth="187.0" styleClass="btn-1" stylesheets="@../design/PageDesign.css" text="Create" />
+												<Button layoutX="588.0" layoutY="60.0" mnemonicParsing="false" onAction="#updateAirline" prefHeight="38.0" prefWidth="187.0" styleClass="btn-1" stylesheets="@../design/PageDesign.css" text="Update" />
+												<Button layoutX="588.0" layoutY="109.0" mnemonicParsing="false" onAction="#deleteAirline" prefHeight="38.0" prefWidth="187.0" styleClass="btn-1" stylesheets="@../design/PageDesign.css" text="Delete" />
+												<Button layoutX="588.0" layoutY="213.0" mnemonicParsing="false" onAction="#findAllAirlines" prefHeight="38.0" prefWidth="187.0" styleClass="btn-1" stylesheets="@../design/PageDesign.css" text="Find All" />
+												<Button layoutX="588.0" layoutY="160.0" mnemonicParsing="false" onAction="#findAirlineById" prefHeight="38.0" prefWidth="187.0" styleClass="btn-1" stylesheets="@../design/PageDesign.css" text="Find By ID" />
+											</children>
+										</AnchorPane>
+										<AnchorPane layoutX="10.0" layoutY="296.0" prefHeight="232.0" prefWidth="832.0" stylesheets="@../design/MainFormDesign.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="296.0">
+											<styleClass>
+												<String fx:value="shadow" />
+												<String fx:value="white-bg" />
+												<String fx:value="radius" />
+											</styleClass>
+											<children>
+												<AnchorPane layoutX="1.0" prefHeight="250.0" prefWidth="831.0">
+													<children>
+														<ScrollPane layoutX="148.0" layoutY="36.0" prefHeight="250.4" prefWidth="831.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+															<content>
+																<TableView fx:id="airlineTable" prefHeight="250.4" prefWidth="831.2">
+																	<columns>
+																		<TableColumn fx:id="airlineIdColumn" prefWidth="184.79999047517776" text="Airline ID" />
+																		<TableColumn fx:id="conventionNumberColumn" prefWidth="345.5999450683594" text="Convention Number" />
+																		<TableColumn fx:id="nameColumn" prefWidth="304.0000762939453" text="Name" />
+																	</columns>
+																</TableView>
+															</content>
+														</ScrollPane>
+													</children>
+												</AnchorPane>
+												<AnchorPane layoutX="-1.0" layoutY="267.0" prefHeight="226.0" prefWidth="833.0">
+													<children>
+														<ScrollPane layoutX="110.0" layoutY="13.0" prefHeight="226.4" prefWidth="833.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+															<content>
+																<TableView fx:id="voyageTable" prefHeight="226.4" prefWidth="833.6">
+																	<columns>
+																		<TableColumn fx:id="voyageIdColumn" prefWidth="211.2000454068184" text="Voyage Id" />
+																		<TableColumn fx:id="destinationColumn" prefWidth="348.79994201660156" text="Destination" />
+																		<TableColumn fx:id="dateColumn" prefWidth="273.5999755859375" text="Date Voyage" />
+																	</columns>
+																</TableView>
+															</content>
+														</ScrollPane>
+													</children>
+												</AnchorPane>
+											</children>
+										</AnchorPane>
+									</children>
+								</AnchorPane>
+							</children>
+						</AnchorPane>
+					</center>
+				</BorderPane>
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>

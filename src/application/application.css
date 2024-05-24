@@ -1,0 +1,43 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* VBox style */
+VBox {
+    -fx-background-color: #f0f0f0; /* Background color */
+}
+
+/* Button style */
+Button {
+    -fx-background-color: #2765a4; /* Green */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 8px 16px; /* Padding */
+}
+
+/* TextField style */
+TextField {
+    -fx-pref-width: 200px; /* Preferred width */
+}
+
+/* TableView style */
+TableView {
+    -fx-pref-width: 600px; /* Preferred width */
+    -fx-pref-height: 300px; /* Preferred height */
+}
+
+/* TableColumn style */
+TableColumn {
+    -fx-alignment: CENTER; /* Text alignment */
+}
+
+/* HBox style */
+HBox {
+    -fx-spacing: 10px; /* Spacing between children */
+}
+
+/* Label style */
+Label {
+    -fx-font-size: 14px; /* Font size */
+}
+
+/* Insets for padding */
+

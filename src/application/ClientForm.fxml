@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientFormController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="220.0" layoutY="173.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="57.0" prefWidth="1100.0" styleClass="white-bg" stylesheets="@../design/MainFormDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-19.0" layoutY="-86.0" prefHeight="143.0" prefWidth="260.0" styleClass="bg-color-1" stylesheets="@../design/MainFormDesign.css">
+                           <children>
+                              <Label layoutX="33.0" layoutY="98.0" styleClass="bg-color-1" stylesheets="@../design/MainFormDesign.css" text="Hotel Management System" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="487.0" layoutY="16.0" text="Client Form">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="860.0" layoutY="20.0" text="MM:DD:YYYY" />
+                        <Button fx:id="Logout_btn" layoutX="1010.0" layoutY="16.0" mnemonicParsing="false" onAction="#directToLogin" styleClass="radius" stylesheets="@../design/PageDesign.css" text="Logout" />
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="543.0" prefWidth="242.0" styleClass="bg-color-1" stylesheets="@../design/MainFormDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="114.0" fitWidth="198.0" layoutX="29.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/hotelbooking.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="25.0" layoutY="140.0" text="Admin ID :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="140.0" prefHeight="17.0" prefWidth="20.0" text="  1" textFill="WHITE" />
+                        <Label layoutX="25.0" layoutY="171.0" prefHeight="17.0" prefWidth="46.0" text="Email :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="171.0" prefHeight="17.0" prefWidth="112.0" text="yassine@gmail.com" textFill="WHITE" />
+                        <Line endX="120.0" layoutX="108.0" layoutY="208.0" startX="-82.0" stroke="WHITE" />
+                        <Label layoutX="25.0" layoutY="228.0" prefHeight="28.0" prefWidth="56.0" text="Feature" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Dashboard_btn" layoutX="27.0" layoutY="256.0" mnemonicParsing="false" onAction="#directToAdminMainForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Dashboard">
+                           <styleClass>
+                              <String fx:value="btn-1" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="Hotel_btn" layoutX="27.0" layoutY="303.0" mnemonicParsing="false" onAction="#directToHotelForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Hotel">
+                           <styleClass>
+                              <String fx:value="btn-1" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="Airline_btn" layoutX="27.0" layoutY="352.0" mnemonicParsing="false" onAction="#directToAirlineForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Airline">
+                           <styleClass>
+                              <String fx:value="btn-1" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="Reservation_btn" layoutX="27.0" layoutY="399.0" mnemonicParsing="false" onAction="#directToReservationForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Reservation">
+                           <styleClass>
+                              <String fx:value="btn-1" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="Client_btn" layoutX="27.0" layoutY="445.0" mnemonicParsing="false" onAction="#directToClientForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Client">
+                           <styleClass>
+                              <String fx:value="btn-1" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="Voyage_btn" layoutX="27.0" layoutY="495.0" mnemonicParsing="false" onAction="#directToVoyageForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../design/PageDesign.css" text="Voyage">
+                           <styleClass>
+                              <String fx:value="btn-1" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="108.0" layoutY="82.0" prefHeight="543.0" prefWidth="858.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="9.0" layoutY="14.0" prefHeight="221.0" prefWidth="832.0" stylesheets="@../design/MainFormDesign.css" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="14.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane layoutX="7.0" prefHeight="222.0" prefWidth="617.0">
+                                       <children>
+                                          <TextField fx:id="clientId" layoutX="2.0" layoutY="14.0" prefHeight="48.0" prefWidth="174.0" promptText="Client Id" styleClass="textfield-1" stylesheets="@../design/PageDesign.css" />
+                                          <TextField fx:id="clientPrenom" layoutX="211.0" layoutY="14.0" prefHeight="48.0" prefWidth="196.0" promptText="First Name" styleClass="textfield-1" stylesheets="@../design/PageDesign.css" />
+                                          <TextField fx:id="clientNom" layoutX="438.0" layoutY="14.0" prefHeight="48.0" prefWidth="172.0" promptText="Last Name" styleClass="textfield-1" stylesheets="@../design/PageDesign.css" />
+                                          <TextField fx:id="clientEmail" layoutX="2.0" layoutY="87.0" prefHeight="48.0" prefWidth="289.0" promptText="Email" styleClass="textfield-1" stylesheets="@../design/PageDesign.css" />
+                                          <TextField fx:id="clientTel" layoutX="2.0" layoutY="160.0" prefHeight="48.0" prefWidth="289.0" promptText="Phone Number" styleClass="textfield-1" stylesheets="@../design/PageDesign.css" />
+                                          <TextField fx:id="clientPass" layoutX="320.0" layoutY="87.0" prefHeight="48.0" prefWidth="289.0" promptText="Password" styleClass="textfield-1" stylesheets="@../design/PageDesign.css" />
+                                          <TextField fx:id="clientAdress" layoutX="320.0" layoutY="160.0" prefHeight="48.0" prefWidth="289.0" promptText="Adress" styleClass="textfield-1" stylesheets="@../design/PageDesign.css" />
+                                       </children>
+                                    </AnchorPane>
+                                    <Button layoutX="664.0" layoutY="16.0" mnemonicParsing="false" onAction="#createClient" prefHeight="38.0" prefWidth="187.0" stylesheets="@../design/PageDesign.css" text="Create">
+                                       <styleClass>
+                                          <String fx:value="btn-1" />
+                                          <String fx:value="radius" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="664.0" layoutY="68.0" mnemonicParsing="false" onAction="#updateClient" prefHeight="38.0" prefWidth="187.0" stylesheets="@../design/PageDesign.css" text="Update">
+                                       <styleClass>
+                                          <String fx:value="btn-1" />
+                                          <String fx:value="radius" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="664.0" layoutY="117.0" mnemonicParsing="false" onAction="#deleteClient" prefHeight="38.0" prefWidth="187.0" stylesheets="@../design/PageDesign.css" text="Delete">
+                                       <styleClass>
+                                          <String fx:value="btn-1" />
+                                          <String fx:value="radius" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="664.0" layoutY="168.0" mnemonicParsing="false" onAction="#findClientById" prefHeight="38.0" prefWidth="187.0" stylesheets="@../design/PageDesign.css" text="Find By ID">
+                                       <styleClass>
+                                          <String fx:value="btn-1" />
+                                          <String fx:value="radius" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="12.0" layoutY="246.4" prefHeight="288.0" prefWidth="833.0" stylesheets="@../design/MainFormDesign.css" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="246.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView fx:id="clientTable" layoutX="178.0" layoutY="14.0" prefHeight="288.0" prefWidth="852.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                        <TableColumn fx:id="clientIdCol" prefWidth="75.0" text="Client Id" />
+                                        <TableColumn fx:id="clientPrenomCol" prefWidth="94.39997100830078" text="First Name" />
+                                          <TableColumn fx:id="clientNomCol" prefWidth="111.99993896484375" text="Last Name" />
+                                          <TableColumn fx:id="clientEmailCol" prefWidth="124.0" text="Client Email" />
+                                          <TableColumn fx:id="clientPassCol" prefWidth="128.80001831054688" text="Client Password" />
+                                          <TableColumn fx:id="clientTelCol" prefWidth="159.99993896484375" text="Client Phone" />
+                                          <TableColumn fx:id="clientAdressCol" prefWidth="162.4000244140625" text="Client Adress" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
